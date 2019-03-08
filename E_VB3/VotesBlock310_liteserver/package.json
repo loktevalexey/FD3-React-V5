@@ -1,0 +1,14 @@
+{
+  "name": "votesblock",
+  "version": "1.0.0",
+  "description": "блок голосования",
+  "main": "VotesBlock.js",
+  "scripts": {
+    "start": ".\\node_modules\\.bin\\lite-server"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "lite-server": "^2.3.0"
+  }
+}

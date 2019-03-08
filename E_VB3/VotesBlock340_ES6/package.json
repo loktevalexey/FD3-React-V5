@@ -1,0 +1,26 @@
+{
+  "name": "votesblock",
+  "version": "1.0.0",
+  "description": "блок голосования",
+  "main": "App.js",
+  "scripts": {
+    "build": ".\\node_modules\\.bin\\webpack",
+    "start": ".\\node_modules\\.bin\\lite-server"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "css-loader": "^0.28.7",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "lite-server": "^2.3.0",
+    "webpack": "^3.8.1"
+  },
+  "dependencies": {
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1"
+  }
+}

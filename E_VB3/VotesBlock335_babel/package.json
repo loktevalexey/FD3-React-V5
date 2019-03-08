@@ -1,0 +1,11 @@
+{
+  "name": "babel_example",
+  "version": "1.0.0",
+  "description": "Babel example",
+  "main": "main.js",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.3.2",
+    "babel-preset-stage-0": "^6.24.1"
+  }
+}

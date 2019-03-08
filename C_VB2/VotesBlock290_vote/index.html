@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html> 
+<html> 
+<head> 
+  <meta charset="utf-8" />
+  <title>Голосование</title>
+</head> 
+<body> 
+  <div id="container"></div> 
+      
+  <script src="https://unpkg.com/react@15/dist/react.js"></script> 
+  <script src="https://unpkg.com/react-dom@15/dist/react-dom.js"></script> 
+      
+  <script src="VotesBlock.js"></script>
+  <link rel="stylesheet" type="text/css" href="VotesBlock.css" />
+  <script src="VotesQuestion.js"></script>
+  <link rel="stylesheet" type="text/css" href="VotesQuestion.css" />
+  <script src="VotesAnswer.js"></script>
+  <link rel="stylesheet" type="text/css" href="VotesAnswer.css" />
+
+  <script>
+
+    var questionText='Как вы относитесь к программированию?';
+    var answersArr=[ 
+      {text:'хорошо',code:1,count:200}, 
+      {text:'не получается',code:2,count:100}, 
+      {text:'избегаю',code:3,count:300},
+      {text:'другой ответ',code:4,count:50,freeanswer:true},
+    ];
+    var defaultFreeAnswerText="???";
+
+    ReactDOM.render(
+      React.createElement(VotesBlock,{question:questionText,answers:answersArr,
+        deffreeanswertext: defaultFreeAnswerText,startWorkMode:1}), 
+      document.getElementById('container') 
+    );
+
+  </script>
+
+</body> 
+</html>

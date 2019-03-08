@@ -1,0 +1,12 @@
+﻿.VotesBlock
+{
+  border: double gray 3px;
+  width: 190px;
+  padding: 3px 7px;
+  background-color: #F0F0F0;
+}
+
+.VotesBlock .Answers
+{
+  padding-top: 5px;
+}

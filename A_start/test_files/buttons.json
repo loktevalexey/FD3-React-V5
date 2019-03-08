@@ -1,0 +1,10 @@
+﻿[
+  {"buttonCaption":"строка 1","alertText":"однажды в студёную зимнюю пору"},
+  {
+    "buttonCaption":"строка 2",
+    "alertText":"я из лесу вышел, был сильный мороз",
+    "options":{"color":"blue","align":"left"}
+  },
+  {"buttonCaption":"строка 3","alertText":"гляжу - поднимается медленно в гору"},
+  {"buttonCaption":"строка 4","alertText":"лошадка, везущая хворосту воз"}
+]

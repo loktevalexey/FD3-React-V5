@@ -1,0 +1,57 @@
+﻿div.PSourceLine
+{
+}
+
+div.PSourceRunning
+{
+/*  background-color: rgb(255,150,150);*/
+  position: absolute;
+  z-index: -1;
+/*  transition-duration: 2s;*/
+  left: 100px;
+  top: 100px;
+  width: 100px;
+  height: 100px;
+}
+
+/*
+div.PSourceLine > div.PSourceRunning
+{
+  background-color: rgb(255,150,150);
+}
+*/
+
+div.PSourceCode
+{
+  white-space: pre;
+  font-family: monospace;
+  padding-left: 15px;
+}
+
+span.PSourceCodeText
+{
+}
+
+span.PSourceCodePostfix
+{
+  margin-left: 5px;
+  color: rgb(255,0,0);
+}
+
+span.PSourceCodePostfix img
+{
+  margin-right: 2px;
+}
+
+div.PSourceBetween div
+{
+  height: 2px;
+  margin-top: 1px;
+}
+
+/*
+div.PSourceBetween > div.PSourceRunning
+{
+  background-color: rgb(192,0,0);
+}
+*/

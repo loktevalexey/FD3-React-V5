@@ -1,0 +1,17 @@
+﻿.VotesBlockAnswer
+{
+  padding: 2px 0;
+}
+
+.VotesBlockAnswer .Count
+{
+  float: right;
+  width: 30px;
+  font-weight: bold;
+  text-align: right;
+}
+
+.VotesBlockAnswer .Text
+{
+  margin-right: 30px;
+}

@@ -1,0 +1,27 @@
+﻿div.MobileClient
+{
+  padding: 2px 0;
+}
+
+span.MobileClientBalance
+{
+  float: right;
+  width: 150px;
+  font-weight: bold;
+  text-align: right;
+}
+
+span.MobileClientBalanceActive 
+{
+  color: blue;
+}
+
+span.MobileClientBalanceBlocked
+{
+  color: red;
+}
+
+span.MobileClientFIO
+{
+  margin-right: 30px;
+}

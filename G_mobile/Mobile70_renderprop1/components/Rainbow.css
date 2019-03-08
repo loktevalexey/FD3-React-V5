@@ -1,0 +1,15 @@
+﻿.Frame1 {
+  padding: 5px;
+  border: solid red 1px;
+  margin-top: 20px;
+}
+
+.Frame2 {
+  padding: 5px;
+  border: solid blue 1px;
+}
+
+.Frame3 {
+  padding: 5px;
+  border: solid green 1px;
+}

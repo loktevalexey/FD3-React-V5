@@ -1,0 +1,15 @@
+﻿.VotesQuestion
+{
+  font-weight: bold;
+  width: 300px;
+}
+
+.VotesQuestionRed
+{
+  color: red;
+}
+
+.VotesQuestionBlue
+{
+  color: blue;
+}
