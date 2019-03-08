@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 import './VotesQuestion.css';
 
-const VotesQuestion = ( props ) => {
+const VotesQuestion = props => {
   return <div className='VotesQuestion'>{props.question}</div>;
 }
 
@@ -19,7 +19,7 @@ import React from 'react';
 
 import './VotesQuestion.css';
 
-export default ( props ) => {
+export default props => {
   return <div className='VotesQuestion'>{props.question}</div>;
 }
 */
@@ -30,5 +30,5 @@ import React from 'react';
 
 import './VotesQuestion.css';
 
-export default ( props ) => <div className='VotesQuestion'>{props.question}</div>;
+export default props => <div className='VotesQuestion'>{props.question}</div>;
 */
