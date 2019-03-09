@@ -1,0 +1,6 @@
+[ 
+    {"text":"хорошо", "code":1, "count":200}, 
+    {"text":"не получается", "code":2, "count":100}, 
+    {"text":"избегаю", "code":3, "count":300},
+    {"text":"другой ответ", "code":4, "count":50, "freeanswer":true}
+]
