@@ -31,5 +31,12 @@ test('работа CounterButton', () => {
   // и получаем окончательный снэпшот
   componentTree=component.toJSON();
   expect(componentTree).toMatchSnapshot();
-    
+  
+  /*
+  // можно эмулировать события, передавая в качестве объекта события то что нам нужно:
+  wrapper.find('select').simulate('change', {
+    target: { value: "hello" },
+  });
+  */
+
 });
