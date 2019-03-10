@@ -1,14 +1,12 @@
-﻿"use strict";
-
-import React from 'react';
+﻿import React from 'react';
 import renderer from 'react-test-renderer';
 
-import TestComponent from '../components/TestComponent';
+import ExampleComponent from '../components/ExampleComponent';
 
-test('работа TestComponent', () => {
+test('работа ExampleComponent', () => {
 
   const component = renderer.create(
-    <TestComponent />
+    <ExampleComponent />
   );
 
   let componentTree=component.toJSON();
