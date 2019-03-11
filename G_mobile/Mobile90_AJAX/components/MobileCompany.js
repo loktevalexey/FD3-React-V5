@@ -46,25 +46,17 @@ class MobileCompany extends React.PureComponent {
             "Accept": "application/json",
         },
     })
-        .then( (response) => { // response - HTTP-ответ
-            if (!response.ok) {
-                let Err=new Error("fetch error " + response.status);
-                Err.userMessage="Ошибка связи";
-                throw Err; // дальше по цепочке пойдёт отвергнутый промис
-            }
+        .then( response => { // response - HTTP-ответ
+            if (!response.ok)
+                throw new Error("fetch error " + response.status); // дальше по цепочке пойдёт отвергнутый промис
             else
                 return response.json(); // дальше по цепочке пойдёт промис с пришедшими по сети данными
         })
-        .then( (data) => {
-            try {
-                this.fetchSuccess(data); // передаём полезные данные в fetchSuccess, дальше по цепочке пойдёт успешный пустой промис
-            }
-            catch ( error ){
-                this.fetchError(error.message); // если что-то пошло не так - дальше по цепочке пойдёт отвергнутый промис
-            }
+        .then( data => {
+            this.fetchSuccess(data); // передаём полезные данные в fetchSuccess, дальше по цепочке пойдёт успешный пустой промис
         })
-        .catch( (error) => {
-            this.fetchError(error.userMessage||error.message);
+        .catch( error => {
+            this.fetchError(error.message);
         })
     ;
 
