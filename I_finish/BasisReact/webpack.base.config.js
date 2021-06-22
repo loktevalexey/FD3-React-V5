@@ -62,7 +62,18 @@ export default new Config().merge({
                     ]
                 })
             },
-        ] 
+            {
+              test: /\.(png|svg|jpg|gif)$/,
+              use: [{
+                loader: "file-loader",
+                options: {
+                  context: './src',
+                  useRelativePath: true,
+                  name: '[name].[ext]'
+                }
+              }]
+            }
+        ]
   },
   plugins: [
     new ExtractTextPlugin("[name].bundle.[hash].css"),
